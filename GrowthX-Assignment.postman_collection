@@ -1,0 +1,818 @@
+{
+	"info": {
+		"_postman_id": "ad481134-2654-4f89-ab34-53deee9df4ec",
+		"name": "New project ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32248441"
+	},
+	"item": [
+		{
+			"name": "API's",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Yash\",\r\n    \"email\":\"Yash@gmail.com\",\r\n    \"role\": \"User\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Example Register Admin",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Akshay\",\r\n    \"email\":\"akshay@gmail.com\",\r\n    \"role\": \"Admin\",\r\n    \"password\": \"1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/auth/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "224"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e0-50vNjulcK8dBSYPygQSzhN9jFoU\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Nov 2024 08:49:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User registered successfully\",\n    \"user\": {\n        \"name\": \"Akshay\",\n        \"email\": \"akshay@gmail.com\",\n        \"password\": \"$2b$10$zmWdVT53h2gu/uu6jVQ6VuZuuOxk56DlbB0D7bL2LH0.SN6IhUXrW\",\n        \"role\": \"Admin\",\n        \"_id\": \"6739ae06ac3420a97b834e1c\",\n        \"__v\": 0\n    }\n}"
+						},
+						{
+							"name": "Example TRegister User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Yash\",\r\n    \"email\":\"Yash@gmail.com\",\r\n    \"role\": \"User\",\r\n    \"password\": \"1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/auth/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "219"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"db-6jWoxl1pZ6dlg4tODegaPqvD/dU\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Nov 2024 08:51:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User registered successfully\",\n    \"user\": {\n        \"name\": \"Yash\",\n        \"email\": \"Yash@gmail.com\",\n        \"password\": \"$2b$10$FCzMF.XXv/Vsnt1ZAoSDEeAAKY4X5V.xz8rZzsmbV2gJLVTjRQPg.\",\n        \"role\": \"User\",\n        \"_id\": \"6739ae7dac3420a97b834e26\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"jhaadarsh50@gmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"jhaadarsh50@gmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "203"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"cb-bBcHp+w09TPcC+9uqSR+JRtqbkQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Nov 2024 08:51:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Mzk5NWZkN2JhMGZmYzcyOTMzMDM4NyIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTczMTgzMzUwMywiZXhwIjoxNzMxOTE5OTAzfQ.ZykTZ14ifIErF9k996-JO1VKA84ygTTTi-o5TeJcfKs\"\n}"
+						}
+					]
+				},
+				{
+					"name": "upload",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MzlhZTdkYWMzNDIwYTk3YjgzNGUyNiIsInJvbGUiOiJVc2VyIiwiaWF0IjoxNzMxODMzNzA5LCJleHAiOjE3MzE5MjAxMDl9.LiJRsw26OGTOkThtZ5aDc7Gjsv9SPIgiecyyukfKoFE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"task\":\"Hello World\",\r\n    \"admin\": \"673995fd7ba0ffc729330387\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/user/upload",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"user",
+								"upload"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MzlhZTdkYWMzNDIwYTk3YjgzNGUyNiIsInJvbGUiOiJVc2VyIiwiaWF0IjoxNzMxODMzNzA5LCJleHAiOjE3MzE5MjAxMDl9.LiJRsw26OGTOkThtZ5aDc7Gjsv9SPIgiecyyukfKoFE",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"task\":\"Hello World\",\r\n    \"admin\": \"673995fd7ba0ffc729330387\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/user/upload",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"user",
+										"upload"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "239"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ef-OipkIy3QtDDZg03+BZC1xb/mC5w\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Nov 2024 08:56:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Assignment uploaded\",\n    \"assignment\": {\n        \"userId\": \"6739ae7dac3420a97b834e26\",\n        \"task\": \"Hello World\",\n        \"admin\": \"673995fd7ba0ffc729330387\",\n        \"status\": \"Pending\",\n        \"_id\": \"6739afcc7ab3015b6d4ddf2d\",\n        \"createdAt\": \"2024-11-17T08:56:44.862Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get AllAdmins",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MzlhZTdkYWMzNDIwYTk3YjgzNGUyNiIsInJvbGUiOiJVc2VyIiwiaWF0IjoxNzMxODMzNzA5LCJleHAiOjE3MzE5MjAxMDl9.LiJRsw26OGTOkThtZ5aDc7Gjsv9SPIgiecyyukfKoFE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/user/admins",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"user",
+								"admins"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MzlhZTdkYWMzNDIwYTk3YjgzNGUyNiIsInJvbGUiOiJVc2VyIiwiaWF0IjoxNzMxODMzNzA5LCJleHAiOjE3MzE5MjAxMDl9.LiJRsw26OGTOkThtZ5aDc7Gjsv9SPIgiecyyukfKoFE",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/user/admins",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"user",
+										"admins"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "236"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ec-EYzNKrVMbg5weNFXS6eP4Aqiox4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Nov 2024 09:26:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"673995fd7ba0ffc729330387\",\n        \"name\": \"Adarsh\",\n        \"email\": \"jhaadarsh50@gmail.com\"\n    },\n    {\n        \"_id\": \"6739ae06ac3420a97b834e1c\",\n        \"name\": \"Akshay\",\n        \"email\": \"akshay@gmail.com\"\n    },\n    {\n        \"_id\": \"6739ae65ac3420a97b834e23\",\n        \"name\": \"Savi\",\n        \"email\": \"savi@gmail.com\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Assignments",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Mzk5NWZkN2JhMGZmYzcyOTMzMDM4NyIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTczMTgzNDEyNSwiZXhwIjoxNzMxOTIwNTI1fQ.WHhRGdalWsqntMg0AK4euGDb9pN94zYaCPYe51-RhQI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"task\":\"Hello World\",\r\n    \"admin\": \"673995fd7ba0ffc729330387\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/admin/assignments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"admin",
+								"assignments"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Mzk5NWZkN2JhMGZmYzcyOTMzMDM4NyIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTczMTgzNDEyNSwiZXhwIjoxNzMxOTIwNTI1fQ.WHhRGdalWsqntMg0AK4euGDb9pN94zYaCPYe51-RhQI",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"task\":\"Hello World\",\r\n    \"admin\": \"673995fd7ba0ffc729330387\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/admin/assignments",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"admin",
+										"assignments"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "736"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2e0-VqQS/s1UfYk9a/37t3pvBDmIQHY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Nov 2024 09:02:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"6739ab30ac51f09fede61ee2\",\n        \"userId\": {\n            \"_id\": \"673997d73ff0b8d33fff5dc8\",\n            \"name\": \"Kunal\",\n            \"email\": \"jhaadarsh@gmail.com\"\n        },\n        \"task\": \"Hello World\",\n        \"admin\": \"673995fd7ba0ffc729330387\",\n        \"status\": \"Pending\",\n        \"createdAt\": \"2024-11-17T08:37:04.447Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6739ac2c4572834a8c8c1c69\",\n        \"userId\": {\n            \"_id\": \"673995fd7ba0ffc729330387\",\n            \"name\": \"Adarsh\",\n            \"email\": \"jhaadarsh50@gmail.com\"\n        },\n        \"task\": \"Hello World\",\n        \"admin\": \"673995fd7ba0ffc729330387\",\n        \"status\": \"Pending\",\n        \"createdAt\": \"2024-11-17T08:41:16.503Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6739afcc7ab3015b6d4ddf2d\",\n        \"userId\": {\n            \"_id\": \"6739ae7dac3420a97b834e26\",\n            \"name\": \"Yash\",\n            \"email\": \"Yash@gmail.com\"\n        },\n        \"task\": \"Hello World\",\n        \"admin\": \"673995fd7ba0ffc729330387\",\n        \"status\": \"Pending\",\n        \"createdAt\": \"2024-11-17T08:56:44.862Z\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Assignments Accept",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Mzk5NWZkN2JhMGZmYzcyOTMzMDM4NyIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTczMTgzNDg0NiwiZXhwIjoxNzMxOTIxMjQ2fQ.aYxSYMGozhsOI7feoVjZ9CSenYEPPSkKDQ5YlyOYLEY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/admin/assignments/6739ab30ac51f09fede61ee2/accept",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"admin",
+								"assignments",
+								"6739ab30ac51f09fede61ee2",
+								"accept"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Mzk5NWZkN2JhMGZmYzcyOTMzMDM4NyIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTczMTgzNDg0NiwiZXhwIjoxNzMxOTIxMjQ2fQ.aYxSYMGozhsOI7feoVjZ9CSenYEPPSkKDQ5YlyOYLEY",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/admin/assignments/6739ab30ac51f09fede61ee2/accept",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"admin",
+										"assignments",
+										"6739ab30ac51f09fede61ee2",
+										"accept"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "240"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f0-+QnHZ4RR0VHsXHNjyavhM+x4nb0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Nov 2024 09:14:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Assignment accepted\",\n    \"assignment\": {\n        \"_id\": \"6739ab30ac51f09fede61ee2\",\n        \"userId\": \"673997d73ff0b8d33fff5dc8\",\n        \"task\": \"Hello World\",\n        \"admin\": \"673995fd7ba0ffc729330387\",\n        \"status\": \"Accepted\",\n        \"createdAt\": \"2024-11-17T08:37:04.447Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Assignments Reject",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Mzk5NWZkN2JhMGZmYzcyOTMzMDM4NyIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTczMTgzNDg0NiwiZXhwIjoxNzMxOTIxMjQ2fQ.aYxSYMGozhsOI7feoVjZ9CSenYEPPSkKDQ5YlyOYLEY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/admin/assignments/6739ab30ac51f09fede61ee2/reject",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"admin",
+								"assignments",
+								"6739ab30ac51f09fede61ee2",
+								"reject"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Mzk5NWZkN2JhMGZmYzcyOTMzMDM4NyIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTczMTgzNDg0NiwiZXhwIjoxNzMxOTIxMjQ2fQ.aYxSYMGozhsOI7feoVjZ9CSenYEPPSkKDQ5YlyOYLEY",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/admin/assignments/6739ab30ac51f09fede61ee2/reject",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"admin",
+										"assignments",
+										"6739ab30ac51f09fede61ee2",
+										"reject"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "240"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f0-wAaROzpgdA4JhUEAYTRoJkuEoCA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Nov 2024 09:19:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Assignment rejected\",\n    \"assignment\": {\n        \"_id\": \"6739ab30ac51f09fede61ee2\",\n        \"userId\": \"673997d73ff0b8d33fff5dc8\",\n        \"task\": \"Hello World\",\n        \"admin\": \"673995fd7ba0ffc729330387\",\n        \"status\": \"Rejected\",\n        \"createdAt\": \"2024-11-17T08:37:04.447Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
